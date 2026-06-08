@@ -1,33 +1,40 @@
+"use client";
+
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
 export default function NavBar() {
+  const pathname = usePathname();
+
+  const navItems = [
+    { name: "Home", href: "/" },
+    { name: "Services", href: "/servicePage" },
+    { name: "About", href: "/about" },
+    { name: "Contact", href: "/contact" },
+  ];
+
   return (
     <div className="flex justify-between items-center w-full px-40 mb-20">
-      <div className="items-center justify-left flex h-20 mt-4">
-        <img src="robinLogo.png" alt="Robin App AS Logo" className="h-16" />
+      <div className="flex items-center h-20 mt-4">
+        <img src="/robinLogo.png" alt="Robin App AS Logo" className="h-16" />
       </div>
-      <div className="items-center justify-right flex h-20 mt-4">
-        <ul className="flex space-x-30">
-          <li>
-            <a href="/" className="text-lg font-bold">
-              Home
-            </a>
+
+      <ul className="flex space-x-20 text-lg font-bold">
+        {navItems.map((item) => (
+          <li key={item.href}>
+            <Link
+              href={item.href}
+              className={`pb-1 transition-colors ${
+                pathname === item.href
+                  ? "text-[#42a9b8] border-b-2 border-[#42a9b8]"
+                  : "text-white hover:text-[#42a9b8]"
+              }`}
+            >
+              {item.name}
+            </Link>
           </li>
-          <li>
-            <a href="/" className="text-lg font-bold">
-              Services
-            </a>
-          </li>
-          <li>
-            <a href="/about" className="text-lg font-bold">
-              About
-            </a>
-          </li>
-          <li>
-            <a href="/contact" className="text-lg font-bold">
-              Contact
-            </a>
-          </li>
-        </ul>
-      </div>
+        ))}
+      </ul>
     </div>
   );
 }
