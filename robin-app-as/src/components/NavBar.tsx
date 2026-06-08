@@ -2,7 +2,7 @@ export default function NavBar() {
   return (
     <div className="flex justify-between items-center w-full px-40">
       <div className="items-center justify-left flex h-20 mt-4">
-        <h1 className="text-5xl font-bold">Robin App AS</h1>
+        <img src="robinLogo.png" alt="Robin App AS Logo" className="h-16" />
       </div>
       <div className="items-center justify-right flex h-20 mt-4">
         <ul className="flex space-x-30">
