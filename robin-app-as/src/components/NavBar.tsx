@@ -1,6 +1,6 @@
 export default function NavBar() {
   return (
-    <div className="flex justify-between items-center w-full px-40">
+    <div className="flex justify-between items-center w-full px-40 mb-20">
       <div className="items-center justify-left flex h-20 mt-4">
         <img src="robinLogo.png" alt="Robin App AS Logo" className="h-16" />
       </div>
@@ -12,12 +12,17 @@ export default function NavBar() {
             </a>
           </li>
           <li>
-            <a href="#" className="text-lg font-bold">
+            <a href="/" className="text-lg font-bold">
+              Services
+            </a>
+          </li>
+          <li>
+            <a href="/about" className="text-lg font-bold">
               About
             </a>
           </li>
           <li>
-            <a href="#" className="text-lg font-bold">
+            <a href="/contact" className="text-lg font-bold">
               Contact
             </a>
           </li>
