@@ -1,6 +1,7 @@
 import DashboardH1 from "@/components/dashboardH1";
 import DashboardH2 from "@/components/dashboardH2";
 import DashboardH3 from "@/components/dashboardH3";
+import DashboardH4 from "@/components/dashboardH4";
 
 export default function Dashboard() {
   return (
@@ -13,6 +14,9 @@ export default function Dashboard() {
       </section>
       <section>
         <DashboardH3 />
+      </section>
+      <section>
+        <DashboardH4 />
       </section>
     </div>
   );
