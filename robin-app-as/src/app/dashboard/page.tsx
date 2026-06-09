@@ -1,14 +1,18 @@
 import DashboardH1 from "@/components/dashboardH1";
 import DashboardH2 from "@/components/dashboardH2";
+import DashboardH3 from "@/components/dashboardH3";
 
 export default function Dashboard() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col gap-4">
       <section>
         <DashboardH1 />
       </section>
       <section>
         <DashboardH2 />
+      </section>
+      <section>
+        <DashboardH3 />
       </section>
     </div>
   );

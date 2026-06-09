@@ -2,9 +2,15 @@ type ServiceCardProps = {
   title: string;
   icon: string;
   text: string;
+  link: string;
 };
 
-export default function ServiceCard({ title, icon, text }: ServiceCardProps) {
+export default function ServiceCard({
+  title,
+  icon,
+  text,
+  link,
+}: ServiceCardProps) {
   return (
     <div className="flex mt-6 flex-col bg-gray-900 p-8 rounded-lg border border-gray-600 gap-6">
       <div>
@@ -13,13 +19,13 @@ export default function ServiceCard({ title, icon, text }: ServiceCardProps) {
       <div>
         <h1 className="text-xl font-bold">{title}</h1>
       </div>
-      <div>
+      <div className="flex flex-grow text-gray-400">
         <p>{text}</p>
       </div>
-      <div>
-        <button className="bg-[#42a9b8] text-white px-5 py-3 rounded-lg w-50">
+      <div className="my-4">
+        <a className="text-[#42a9b8]" href={link}>
           Learn More →
-        </button>
+        </a>
       </div>
     </div>
   );
