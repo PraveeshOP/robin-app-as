@@ -1,6 +1,6 @@
 export default function DashboardH1() {
   return (
-    <div className="flex justify-between mt-4 w-full px-20">
+    <div className="flex justify-between mt-4 w-full px-30">
       <div className="flex flex-col gap-4 w-200">
         <h1 className="text-7xl font-bold">
           Build your idea into a <span className="text-[#42a9b8]">product</span>

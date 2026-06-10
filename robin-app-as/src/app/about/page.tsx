@@ -1,7 +1,11 @@
+import AboutH1 from "@/components/aboutH1";
+
 export default function About() {
   return (
-    <div className="flex flex-col gap-20">
-      <p className="text-6xl font-bold">About Robin App AS</p>
+    <div className="flex flex-col gap-4">
+      <section>
+        <AboutH1 />
+      </section>
     </div>
   );
 }
