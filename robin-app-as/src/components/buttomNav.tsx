@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function ButtomNavBar() {
   return (
-    <div className="flex flex-row items-center w-full px-20 mb-20 mt-10">
+    <div className="flex flex-row items-center w-full px-20 pb-30 mt-10">
       <div className="flex-1 items-center h-20 mt-4 gap-4">
         <div className="items-center">
           <img src="/robinLogo.png" alt="Robin App AS Logo" className="h-12" />

@@ -1,4 +1,3 @@
-import { ACTION_BUILDING_INDICATOR_HIDE } from "next/dist/next-devtools/dev-overlay/shared";
 import AboutUsInnerCard from "./aboutUsInnerCard";
 
 export default function AboutUsCard() {
