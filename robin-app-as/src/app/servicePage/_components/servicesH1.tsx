@@ -8,14 +8,14 @@ export default function ServicesH1() {
             Powerful IT solutions that drive your business <br /> forward.
           </h1>
           <p className="mt-4 text-gray-400">
-            We are a team of passionate developers, designers, and strategists
-            who love turning ideas into powerful digital solutions. We focus on
-            quality, innovation, and long-term parterships to help businesses
-            succeed in the digital world.
+            We deliver end-to-end digital solutions to help businesses innovate,
+            scale, and stay ahead in the competitive landscape. From custom
+            software development to IT consulting, we have the expertise to turn
+            your vision into reality.
           </p>
           <a href="/contact">
-            <button className="bg-[#42a9b8] text-white px-5 py-3 rounded-lg w-50">
-              Contact Us →
+            <button className="bg-[#42a9b8] text-white px-5 py-3 rounded-lg w-60">
+              Let's Build Together →
             </button>
           </a>
         </div>

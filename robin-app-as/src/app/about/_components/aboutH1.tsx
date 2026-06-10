@@ -14,7 +14,7 @@ export default function AboutH1() {
             succeed in the digital world.
           </p>
           <a href="/contact">
-            <button className="bg-[#42a9b8] text-white px-5 py-3 rounded-lg w-50">
+            <button className="bg-[#42a9b8] text-white px-5 py-3 rounded-lg w-60">
               Contact Us →
             </button>
           </a>

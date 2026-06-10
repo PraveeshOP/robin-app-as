@@ -1,4 +1,4 @@
-import ServiceCard from "./serviceCard";
+import ServiceCard from "@/components/serviceCard";
 
 export default function DashboardH2() {
   return (
