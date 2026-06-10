@@ -1,4 +1,4 @@
-import AboutUsCard from "./aboutUsCard";
+import AboutUsCard from "@/app/dashboard/_components/aboutUsCard";
 
 export default function DashboardH3() {
   return (

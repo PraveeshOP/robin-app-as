@@ -1,8 +1,8 @@
-import DashboardH1 from "@/components/dashboardH1";
-import DashboardH2 from "@/components/dashboardH2";
-import DashboardH3 from "@/components/dashboardH3";
-import DashboardH4 from "@/components/dashboardH4";
-import DashboardH5 from "@/components/dashboardH5";
+import DashboardH1 from "@/app/dashboard/_components/dashboardH1";
+import DashboardH2 from "@/app/dashboard/_components/dashboardH2";
+import DashboardH3 from "@/app/dashboard/_components/dashboardH3";
+import DashboardH4 from "@/app/dashboard/_components/dashboardH4";
+import DashboardH5 from "@/app/dashboard/_components/dashboardH5";
 
 export default function Dashboard() {
   return (
