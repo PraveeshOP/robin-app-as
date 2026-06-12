@@ -19,25 +19,25 @@ export default function DashboardH4() {
         <div className="flex-1/4 flex flex-row gap-10">
           <OurProcessInnerCard
             number={1}
-            icon="/userIcon.png"
+            icon="/discover.png"
             title="Discover"
             text="We start by understanding your requirements and goals."
           />
           <OurProcessInnerCard
             number={2}
-            icon="/userIcon.png"
+            icon="/plan.png"
             title="Plan"
             text="Our team creates a detailed plan for your project."
           />
           <OurProcessInnerCard
             number={3}
-            icon="/userIcon.png"
+            icon="/develop.png"
             title="Development"
             text="We build your solution using the latest technologies."
           />
           <OurProcessInnerCard
             number={4}
-            icon="/userIcon.png"
+            icon="/deliver.png"
             title="Deliver"
             text="We test, launch and support your product."
           />

@@ -5,12 +5,12 @@ export default function ContactUsCard() {
     <div className="flex flex-row gap-10 w-full">
       <ContactUsInnerCard
         title="Quick Responses"
-        icon="/userIcon.png"
+        icon="/response.png"
         text="We reply within 24 hours"
       />
       <ContactUsInnerCard
         title="Expert Support"
-        icon="/userIcon.png"
+        icon="/customerSupport.png"
         text="We're here to help"
       />
     </div>

@@ -46,9 +46,9 @@ export default function AboutH3() {
         </div>
         <div className="flex-1">
           <img
-            src="/developerTeam2.png"
+            src="/about2.png"
             alt="Dashboard Image"
-            className="rounded-lg h-auto w-180"
+            className="rounded-lg h-90 w-200 object-cover"
           />
         </div>
       </div>

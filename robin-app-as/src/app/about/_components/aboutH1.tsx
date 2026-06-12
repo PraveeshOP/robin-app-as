@@ -21,9 +21,9 @@ export default function AboutH1() {
         </div>
         <div className="flex-1">
           <img
-            src="/developerTeam2.png"
+            src="/about1.png"
             alt="Dashboard Image"
-            className="rounded-lg h-auto w-180"
+            className="rounded-lg h-90 w-200 object-cover"
           />
         </div>
       </div>
