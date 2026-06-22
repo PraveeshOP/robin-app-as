@@ -2,7 +2,7 @@ import ContactUsInnerCard from "./contactUsInnerCard";
 
 export default function ContactUsCard() {
   return (
-    <div className="flex flex-row gap-10 w-full">
+    <div className="grid w-full grid-cols-1 gap-5 pt-3 sm:grid-cols-2">
       <ContactUsInnerCard
         title="Quick Responses"
         icon="/response.png"

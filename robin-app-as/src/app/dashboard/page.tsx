@@ -6,7 +6,7 @@ import DashboardH5 from "@/app/dashboard/_components/dashboardH5";
 
 export default function Dashboard() {
   return (
-    <div className="flex flex-col gap-4 mt-20">
+    <div className="flex flex-col gap-8 pt-6 sm:pt-10 lg:gap-12 lg:pt-16">
       <section>
         <DashboardH1 />
       </section>

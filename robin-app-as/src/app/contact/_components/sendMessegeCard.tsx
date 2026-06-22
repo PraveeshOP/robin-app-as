@@ -59,14 +59,14 @@ export default function SendMessegeCard() {
   };
 
   return (
-    <div className="flex flex-col gap-4 w-full bg-gray-900 p-6 rounded-lg">
+    <div className="flex w-full min-w-0 flex-col gap-4 rounded-lg bg-gray-900 p-5 sm:p-6">
       <h1 className="text-2xl font-bold">Send us a message</h1>
       <p className="text-gray-400">
         Have a question or want to work together? Fill out the form below and
-        we'll get back to you as soon as possible.
+        we&apos;ll get back to you as soon as possible.
       </p>
       <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
-        <div className="flex flex-row gap-4">
+        <div className="flex flex-col gap-4 sm:flex-row">
           <div className="flex-1">
             <input
               type="text"
@@ -84,7 +84,7 @@ export default function SendMessegeCard() {
             />
           </div>
         </div>
-        <div className="flex flex-row gap-4">
+        <div className="flex flex-col gap-4 sm:flex-row">
           <div className="flex-1">
             <input
               type="email"
@@ -102,7 +102,7 @@ export default function SendMessegeCard() {
             />
           </div>
         </div>
-        <div className="flex flex-row gap-4">
+        <div className="flex flex-col gap-4 sm:flex-row">
           <div className="flex-1">
             <input
               type="text"

@@ -12,7 +12,7 @@ export default function ServiceCard({
   link,
 }: ServiceCardProps) {
   return (
-    <div className="flex mt-6 flex-col bg-gray-900 p-8 rounded-lg border border-gray-600 gap-6 h-80">
+    <article className="flex h-full min-h-72 flex-col gap-5 rounded-lg border border-gray-600 bg-gray-900 p-6 sm:p-8">
       <div>
         <img src={icon} alt="Service Icon" className="h-16 mr-4" />
       </div>
@@ -27,6 +27,6 @@ export default function ServiceCard({
           Learn More →
         </a>
       </div>
-    </div>
+    </article>
   );
 }

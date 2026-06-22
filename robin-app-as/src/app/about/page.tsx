@@ -6,7 +6,7 @@ import StartProject from "@/components/startProject";
 
 export default function About() {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-8 pt-4 lg:gap-12">
       <section>
         <AboutH1 />
       </section>

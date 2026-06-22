@@ -2,9 +2,8 @@ import ServiceCard from "@/components/serviceCard";
 
 export default function ServicesH2() {
   return (
-    <div className="flex flex-col w-[90%] items-center justify-center">
-      <div className="flex flex-row gap-4 w-full justify-center">
-        <div className="flex-1">
+    <div className="grid w-full max-w-[1600px] grid-cols-1 gap-5 px-4 sm:grid-cols-2 sm:px-6 lg:grid-cols-3 xl:grid-cols-4">
+        <div>
           <ServiceCard
             title="Web Development"
             icon="/webDevelopment.png"
@@ -12,7 +11,7 @@ export default function ServicesH2() {
             link="/servicePage"
           />
         </div>
-        <div className="flex-1">
+        <div>
           <ServiceCard
             title="Mobile App Development"
             icon="/mobileDevelopment.png"
@@ -20,7 +19,7 @@ export default function ServicesH2() {
             link="/servicePage"
           />
         </div>
-        <div className="flex-1">
+        <div>
           <ServiceCard
             title="Accounting System"
             icon="/accountingSystem.webp"
@@ -28,7 +27,7 @@ export default function ServicesH2() {
             link="/servicePage"
           />
         </div>
-        <div className="flex-1">
+        <div>
           <ServiceCard
             title="IT Consulting"
             icon="/itConsulting.png"
@@ -36,9 +35,7 @@ export default function ServicesH2() {
             link="/servicePage"
           />
         </div>
-      </div>
-      <div className="flex flex-row gap-4 w-3/4 justify-center">
-        <div className="flex-1">
+        <div>
           <ServiceCard
             title="Cyber Security"
             icon="/cyberSecurityLogo.png"
@@ -46,7 +43,7 @@ export default function ServicesH2() {
             link="/servicePage"
           />
         </div>
-        <div className="flex-1">
+        <div>
           <ServiceCard
             title="DevOps & Automation"
             icon="/devOps.png"
@@ -54,7 +51,7 @@ export default function ServicesH2() {
             link="/servicePage"
           />
         </div>
-        <div className="flex-1">
+        <div>
           <ServiceCard
             title="Support & Maintenance"
             icon="/customerSupport.png"
@@ -62,7 +59,6 @@ export default function ServicesH2() {
             link="/servicePage"
           />
         </div>
-      </div>
     </div>
   );
 }

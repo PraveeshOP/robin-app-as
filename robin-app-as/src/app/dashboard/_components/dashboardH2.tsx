@@ -2,20 +2,20 @@ import ServiceCard from "@/components/serviceCard";
 
 export default function DashboardH2() {
   return (
-    <div className="flex flex-col gap-20 w-full items-center justify-center">
-      <div className="w-9/10 bg-gray-900 p-8 rounded-lg">
-        <div className="flex justify-between mt-4">
-          <div className="flex flex-col gap-4 w-200">
-            <h1 className="text-5xl font-bold">Our Services</h1>
+    <div className="flex w-full items-center justify-center px-4 sm:px-6">
+      <div className="w-full max-w-[1600px] rounded-lg bg-gray-900 p-6 sm:p-8">
+        <div className="flex flex-col justify-between gap-3 sm:flex-row sm:items-end">
+          <div className="flex flex-col gap-4">
+            <h2 className="text-3xl font-bold sm:text-4xl lg:text-5xl">Our Services</h2>
           </div>
-          <div className="flex flex-col gap-4 w-200 text-gray-400">
+          <div className="max-w-xl text-gray-400">
             <p>
-              We offer a wide range of IT solutions to help <br /> businesses
+              We offer a wide range of IT solutions to help businesses
               innovate, scale and stay ahead.
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-4 gap-6">
+        <div className="mt-2 grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4">
           <ServiceCard
             title="Web Development"
             icon="/webDevelopment.png"

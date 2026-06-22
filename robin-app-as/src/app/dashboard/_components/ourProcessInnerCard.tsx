@@ -19,7 +19,7 @@ export default function OurProcessInnerCard({
       <div>
         <h1 className="text-2xl font-bold text-gray-400">{number}</h1>
         <h2 className="text-xl font-semibold">{title}</h2>
-        <p className="text-gray-400 w-40">{text}</p>
+        <p className="text-gray-400">{text}</p>
       </div>
     </div>
   );

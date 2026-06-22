@@ -10,13 +10,13 @@ export default function AboutUsInnerCard({
   text,
 }: AboutUsInnerCardProps) {
   return (
-    <div className="flex flex-row gap-4">
+    <div className="flex flex-row gap-3">
       <div>
         <img src={icon} alt="About Us Icon" className="h-10 w-auto" />
       </div>
       <div className="flex flex-col">
         <div>
-          <h1 className="text-3xl font-bold">{number}+</h1>
+          <p className="text-2xl font-bold xl:text-3xl">{number}+</p>
         </div>
         <div>
           <p className="text-gray-400">{text}</p>

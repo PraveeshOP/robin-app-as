@@ -33,8 +33,9 @@ export default function ButtomNavBar() {
   }
 
   return (
-    <div className="flex flex-row items-center w-full px-20 pb-30 mt-10">
-      <div className="flex-1 items-center h-20 mt-4 gap-4">
+    <footer className="mt-16 w-full px-4 pb-12 pt-4 sm:px-6 lg:px-10 xl:px-20">
+      <div className="mx-auto grid max-w-[1600px] grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-5">
+      <div className="min-w-0">
         <div className="items-center">
           <img src="/robinLogo.png" alt="Robin App AS Logo" className="h-12" />
         </div>
@@ -55,17 +56,17 @@ export default function ButtomNavBar() {
           <img src="/facebookLogo.png" alt="Facebook" className="h-6" />
         </div>
       </div>
-      <div className="flex-1">
-        <div className="flex-1 items-center h-20 mt-4">
+      <div className="min-w-0">
+        <div>
           <div className="items-center mb-4">
             <h1 className="text-lg font-bold">Quick Links</h1>
           </div>
-          <ul className="flex flex-col space-x-20 text-gray-400">
+          <ul className="flex flex-col gap-2 text-gray-400">
             <li>
               <Link href="/">Home</Link>
             </li>
             <li>
-              <Link href="/services">Services</Link>
+              <Link href="/servicePage">Services</Link>
             </li>
             <li>
               <Link href="/about">About</Link>
@@ -76,29 +77,29 @@ export default function ButtomNavBar() {
           </ul>
         </div>
       </div>
-      <div className="flex-1">
-        <div className="flex-1 items-center h-20 mt-4">
+      <div className="min-w-0">
+        <div>
           <div className="items-center mb-4">
             <h1 className="text-lg font-bold">Services</h1>
           </div>
-          <ul className="flex flex-col space-x-20 text-gray-400">
+          <ul className="flex flex-col gap-2 text-gray-400">
             <li>
               <Link href="/">Web Development</Link>
             </li>
             <li>
-              <Link href="/services">Mobile Development</Link>
+              <Link href="/servicePage">Mobile Development</Link>
             </li>
             <li>
-              <Link href="/about">Accounting Systems</Link>
+              <Link href="/servicePage">Accounting Systems</Link>
             </li>
             <li>
-              <Link href="/contact">IT Consulting</Link>
+              <Link href="/servicePage">IT Consulting</Link>
             </li>
           </ul>
         </div>
       </div>
-      <div className="flex-1">
-        <div className="flex-1 items-center h-20 mt-4">
+      <div className="min-w-0">
+        <div>
           <div className="items-center mb-4">
             <h1 className="text-lg font-bold">Contact Us</h1>
           </div>
@@ -110,21 +111,21 @@ export default function ButtomNavBar() {
           </p>
         </div>
       </div>
-      <div className="flex-1">
-        <div className="flex-1 items-center h-20 mt-4">
+      <div className="min-w-0 sm:col-span-2 lg:col-span-1">
+        <div>
           <div className="items-center mb-4">
             <h1 className="text-lg font-bold">Newsletter</h1>
           </div>
           <p className="text-gray-400 mb-4">
             Subscribe to our newsletter for the latest updates and insights.
           </p>
-          <div className="flex flex-row gap-4">
+          <div className="flex flex-col gap-3 xl:flex-row">
             <input
               type="email"
               placeholder="Enter your email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="px-4 py-2 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-[#42a9b8]"
+              className="min-w-0 w-full px-4 py-2 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-[#42a9b8]"
             />
             <button
               onClick={handleSubscribe}
@@ -135,10 +136,7 @@ export default function ButtomNavBar() {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </footer>
   );
 }
-
-//<ul className="flex space-x-20 text-lg font-bold">
-//<li></li>
-// </ul>

@@ -2,7 +2,7 @@ import AboutUsInnerCard from "./aboutUsInnerCard";
 
 export default function AboutUsCard() {
   return (
-    <div className="flex flex-row gap-10 w-full items-center justify-center">
+    <div className="grid w-full grid-cols-1 gap-6 pt-3 sm:grid-cols-3 lg:gap-8">
       <AboutUsInnerCard number={10} icon="/userIcon.png" text="Happy Clients" />
       <AboutUsInnerCard
         number={50}
