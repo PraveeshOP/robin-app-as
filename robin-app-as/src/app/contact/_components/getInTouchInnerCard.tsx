@@ -11,7 +11,7 @@ export default function GetInTouchInnerCard({
 }: GetInTouchInnerCardProps) {
   return (
     <div className="flex flex-row gap-3 rounded-lg bg-gray-900 p-3">
-      <div className="flex w-10 flex-shrink-0 items-start">
+      <div className="flex w-10 flex-shrink-0 items-center">
         <img src={icon} alt="Contact Us Icon" className="h-8 w-auto" />
       </div>
 
