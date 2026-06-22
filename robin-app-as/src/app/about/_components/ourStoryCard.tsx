@@ -6,21 +6,21 @@ export default function OurStoryCard() {
       <div>
         <OurStoryInnerCard
           title="Our Vision"
-          icon="/userIcon.png"
+          icon="/ourVision.png"
           text="To be a global IT company known for creating, value, building trust, and shaping the future of technology."
         />
       </div>
       <div>
         <OurStoryInnerCard
           title="Our Mission"
-          icon="/userIcon.png"
+          icon="/ourMission.png"
           text="To deliver innovative and reliable software solutions that empower businesses to thrive in the digital age."
         />
       </div>
       <div>
         <OurStoryInnerCard
           title="Our Values"
-          icon="/userIcon.png"
+          icon="/ourValues.png"
           text="Quality, Integrity, Customer-Centricity, Innovation, and Collaboration are at the core of everything we do."
         />
       </div>

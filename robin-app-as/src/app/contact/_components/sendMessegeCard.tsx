@@ -59,13 +59,13 @@ export default function SendMessegeCard() {
   };
 
   return (
-    <div className="flex w-full min-w-0 flex-col gap-4 rounded-lg bg-gray-900 p-5 sm:p-6">
+    <div className="flex h-full w-full min-w-0 flex-col gap-4 rounded-lg bg-gray-900 p-5 sm:p-6">
       <h1 className="text-2xl font-bold">Send us a message</h1>
       <p className="text-gray-400">
         Have a question or want to work together? Fill out the form below and
         we&apos;ll get back to you as soon as possible.
       </p>
-      <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
+      <form className="flex flex-1 flex-col gap-4" onSubmit={handleSubmit}>
         <div className="flex flex-col gap-4 sm:flex-row">
           <div className="flex-1">
             <input
@@ -127,12 +127,12 @@ export default function SendMessegeCard() {
         </div>
         <textarea
           placeholder="Your Message ..."
-          className="w-full p-3 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500 h-32 resize-none border border-gray-700 bg-black"
+          className="w-full p-3 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500 h-45 resize-none border border-gray-700 bg-black"
           onChange={(e) => setMessage(e.target.value)}
         />
         <button
           type="submit"
-          className="w-full py-3 bg-[#42a9b8] text-white rounded-lg hover:bg-[#42a9b8]/90 transition duration-300"
+          className="mt-auto w-full py-3 bg-[#42a9b8] text-white rounded-lg hover:bg-[#42a9b8]/90 transition duration-300"
         >
           Send Message
         </button>

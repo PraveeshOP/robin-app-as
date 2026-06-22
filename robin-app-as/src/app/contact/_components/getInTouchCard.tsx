@@ -2,7 +2,11 @@ import GetInTouchInnerCard from "./getInTouchInnerCard";
 
 export default function GetInTouchCard() {
   return (
-    <div className="flex flex-col gap-4 w-full">
+    <div className="flex flex-col gap-2 w-full">
+      <h1 className="text-2xl font-bold">Get in touch</h1>
+      <p className="text-gray-400">
+        We&apos;re here to answer your questions and help you succeed.
+      </p>
       <GetInTouchInnerCard
         title="Our Office"
         icon="/location.png"
