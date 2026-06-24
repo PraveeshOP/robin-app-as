@@ -14,10 +14,10 @@ export async function POST(req: Request) {
       return { data, error };
   }
 
-  async function sendEmailInternal(email: string, subject: string, message: string) {
+  async function sendEmailInternal(fromEmail: string, toEmail: string, subject: string, message: string) {
       const { data, error } = await resend.emails.send({
-          from: "<praveeshpoudel1@gmail.com>",
-          to: [email],
+          from: fromEmail,
+          to: [toEmail],
           subject: subject,
           html: `<h1>Hello!</h1><p>${message}</p>`,
       });
@@ -30,7 +30,7 @@ export async function POST(req: Request) {
     console.log("Body:", body);
 
     const { data: customerData, error: customerError } = await sendEmailCustomer(body.firstName, body.email);
-    const { data: internalData, error: internalError } = await sendEmailInternal(body.internalEmail, body.subject, body.message);
+    const { data: internalData, error: internalError } = await sendEmailInternal(body.email, body.internalEmail, body.subject, body.message);
 
     console.log("Resend data:", customerData);
     console.log("Resend error:", customerError);
