@@ -4,25 +4,25 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
 
-    async function sendEmailCustomer(firstName: string, email: string) {
-        const { data, error } = await resend.emails.send({
-            from: "Robin App <contact@resend.dev>",
-            to: [email],
-            subject: "Hello world",
-            html: `<h1>Hello ${firstName}!</h1><p>Thank you for contacting us. We will get back to you shortly.</p>`,
-        });
-        return { data, error };
-    }
+  async function sendEmailCustomer(firstName: string, email: string) {
+      const { data, error } = await resend.emails.send({
+          from: "Robin App <contact@robinapp.no>",
+          to: [email],
+          subject: "We've Received Your Request",
+          html: `<h1>Hello ${firstName}!</h1><p>Thank you for contacting us. We will get back to you shortly.</p>`,
+      });
+      return { data, error };
+  }
 
-    async function sendEmailInternal(email: string, subject: string, message: string) {
-        const { data, error } = await resend.emails.send({
-            from: "Robin App <contact@resend.dev>",
-            to: [email],
-            subject: subject,
-            html: `<h1>Hello!</h1><p>${message}</p>`,
-        });
-        return { data, error };
-    }
+  async function sendEmailInternal(email: string, subject: string, message: string) {
+      const { data, error } = await resend.emails.send({
+          from: "<praveeshpoudel1@gmail.com>",
+          to: [email],
+          subject: subject,
+          html: `<h1>Hello!</h1><p>${message}</p>`,
+      });
+      return { data, error };
+  }
 
   try {
     const body = await req.json();
