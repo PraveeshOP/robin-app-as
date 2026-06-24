@@ -15,7 +15,7 @@ export default function GetInTouchCard() {
       <GetInTouchInnerCard
         title="Email Us"
         icon="/email.png"
-        text={"praveeshpoudel1@gmail.com \n it@easy.no"}
+        text={"it@robinapp.no \n regnskap@robinapp.no"}
       />
       <GetInTouchInnerCard
         title="Call Us"
