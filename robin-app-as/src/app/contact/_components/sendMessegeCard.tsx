@@ -17,9 +17,9 @@ export default function SendMessegeCard() {
     let internalEmail = "";
 
     if (selectedService === "itService") {
-      internalEmail = "it@easya.no";
+      internalEmail = "it@robinapp.no";
     } else if (selectedService === "accountingService") {
-      internalEmail = "easyit@easya.no";
+      internalEmail = "regnskap@robinapp.no";
     } else {
       alert("Please select a service.");
 
