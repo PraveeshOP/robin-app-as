@@ -16,10 +16,10 @@ export async function POST(req: Request) {
 
   async function sendEmailInternal(fromEmail: string, toEmail: string, subject: string, message: string) {
       const { data, error } = await resend.emails.send({
-          from: fromEmail,
+          from: "Robin App <contact@robinapp.no>",
           to: [toEmail],
           subject: subject,
-          html: `<h1>Hello!</h1><p>${message}</p>`,
+          html: `<h1>Hello!</h1><p>From: ${fromEmail}</p><p>${message}</p>`,
       });
       return { data, error };
   }
