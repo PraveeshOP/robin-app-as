@@ -3,8 +3,7 @@
 import { useState } from "react";
 
 export default function SendMessegeCard() {
-  const [firstName, setFirstName] = useState<string>("");
-  const [lastName, setLastName] = useState<string>("");
+  const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [phoneNumber, setPhoneNumber] = useState<string>("");
   const [subject, setSubject] = useState<string>("");
@@ -32,8 +31,7 @@ export default function SendMessegeCard() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          firstName,
-          lastName,
+          name,
           email,
           phoneNumber,
           subject,
@@ -67,22 +65,12 @@ export default function SendMessegeCard() {
       </p>
       <form className="flex flex-1 flex-col gap-4" onSubmit={handleSubmit}>
         <div className="flex flex-col gap-4 sm:flex-row">
-          <div className="flex-1">
-            <input
-              type="text"
-              placeholder="First Name"
-              className="w-full p-3 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-700 bg-black"
-              onChange={(e) => setFirstName(e.target.value)}
-            />
-          </div>
-          <div className="flex-1">
-            <input
-              type="text"
-              placeholder="Last Name"
-              className="w-full p-3 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-700 bg-black"
-              onChange={(e) => setLastName(e.target.value)}
-            />
-          </div>
+          <input
+            type="text"
+            placeholder="Name"
+            className="w-full p-3 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-700 bg-black"
+            onChange={(e) => setName(e.target.value)}
+          />
         </div>
         <div className="flex flex-col gap-4 sm:flex-row">
           <div className="flex-1">
@@ -115,7 +103,7 @@ export default function SendMessegeCard() {
             <select
               value={selectedService}
               onChange={(e) => setSelectedService(e.target.value)}
-              className="w-full rounded-lg border border-gray-700 p-3 bg-black text-gray-400"
+              className="w-full h-full rounded-lg border border-gray-700 p-3 bg-black text-gray-400"
             >
               <option value="">Select a service</option>
 

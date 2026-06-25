@@ -4,12 +4,12 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
 
-  async function sendEmailCustomer(firstName: string, email: string) {
+  async function sendEmailCustomer(name: string, email: string) {
       const { data, error } = await resend.emails.send({
           from: "Robin App <contact@robinapp.no>",
           to: [email],
           subject: "We've Received Your Request",
-          html: `<h1>Hello ${firstName}!</h1><p>Thank you for contacting us. We will get back to you shortly.</p>`,
+          html: `<h1>Hello ${name}!</h1><p>Thank you for contacting us. We will get back to you shortly.</p>`,
       });
       return { data, error };
   }
@@ -29,7 +29,7 @@ export async function POST(req: Request) {
 
     console.log("Body:", body);
 
-    const { data: customerData, error: customerError } = await sendEmailCustomer(body.firstName, body.email);
+    const { data: customerData, error: customerError } = await sendEmailCustomer(body.name, body.email);
     const { data: internalData, error: internalError } = await sendEmailInternal(body.email, body.internalEmail, body.subject, body.message);
 
     console.log("Resend data:", customerData);
