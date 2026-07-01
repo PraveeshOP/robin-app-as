@@ -17,7 +17,9 @@ export default function DashboardH3() {
               About Us →
             </a>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl">We are your trusted IT partners</h2>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl">
+            We are your trusted IT partners
+          </h2>
           <p className="mt-4 text-[var(--muted)]">
             We are a team of passionate developers, designers, and strategists
             who love turning ideas into powerful digital solutions. We focus on
