@@ -57,9 +57,9 @@ export default function SendMessegeCard() {
   };
 
   return (
-    <div className="flex h-full w-full min-w-0 flex-col gap-4 rounded-lg bg-gray-900 p-5 sm:p-6">
+    <div className="flex h-full w-full min-w-0 flex-col gap-4 rounded-lg border border-[color:var(--border)] bg-[var(--surface)] p-5 shadow-sm sm:p-6">
       <h1 className="text-2xl font-bold">Send us a message</h1>
-      <p className="text-gray-400">
+      <p className="text-[var(--muted)]">
         Have a question or want to work together? Fill out the form below and
         we&apos;ll get back to you as soon as possible.
       </p>
@@ -68,7 +68,7 @@ export default function SendMessegeCard() {
           <input
             type="text"
             placeholder="Name"
-            className="w-full p-3 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-700 bg-black"
+            className="w-full rounded-lg border border-[color:var(--border)] bg-[var(--background)] p-3 text-[var(--foreground)] placeholder:text-[var(--muted)] focus:outline-none focus:ring-2 focus:ring-blue-500"
             onChange={(e) => setName(e.target.value)}
           />
         </div>
@@ -77,7 +77,7 @@ export default function SendMessegeCard() {
             <input
               type="email"
               placeholder="Email Address"
-              className="w-full p-3 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-700 bg-black"
+              className="w-full rounded-lg border border-[color:var(--border)] bg-[var(--background)] p-3 text-[var(--foreground)] placeholder:text-[var(--muted)] focus:outline-none focus:ring-2 focus:ring-blue-500"
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
@@ -85,7 +85,7 @@ export default function SendMessegeCard() {
             <input
               type="tel"
               placeholder="Phone Number"
-              className="w-full p-3 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-700 bg-black"
+              className="w-full rounded-lg border border-[color:var(--border)] bg-[var(--background)] p-3 text-[var(--foreground)] placeholder:text-[var(--muted)] focus:outline-none focus:ring-2 focus:ring-blue-500"
               onChange={(e) => setPhoneNumber(e.target.value)}
             />
           </div>
@@ -95,7 +95,7 @@ export default function SendMessegeCard() {
             <input
               type="text"
               placeholder="Subject"
-              className="w-full p-3 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-700 bg-black"
+              className="w-full rounded-lg border border-[color:var(--border)] bg-[var(--background)] p-3 text-[var(--foreground)] placeholder:text-[var(--muted)] focus:outline-none focus:ring-2 focus:ring-blue-500"
               onChange={(e) => setSubject(e.target.value)}
             />
           </div>
@@ -103,7 +103,7 @@ export default function SendMessegeCard() {
             <select
               value={selectedService}
               onChange={(e) => setSelectedService(e.target.value)}
-              className="w-full h-full rounded-lg border border-gray-700 p-3 bg-black text-gray-400"
+              className="h-full w-full rounded-lg border border-[color:var(--border)] bg-[var(--background)] p-3 text-[var(--foreground)]"
             >
               <option value="">Select a service</option>
 
@@ -115,7 +115,7 @@ export default function SendMessegeCard() {
         </div>
         <textarea
           placeholder="Your Message ..."
-          className="w-full p-3 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500 h-45 resize-none border border-gray-700 bg-black"
+          className="h-45 w-full resize-none rounded-lg border border-[color:var(--border)] bg-[var(--background)] p-3 text-[var(--foreground)] placeholder:text-[var(--muted)] focus:outline-none focus:ring-2 focus:ring-blue-500"
           onChange={(e) => setMessage(e.target.value)}
         />
         <button

@@ -19,7 +19,7 @@ export default function AboutUsInnerCard({
           <p className="text-2xl font-bold xl:text-3xl">{number}+</p>
         </div>
         <div>
-          <p className="text-gray-400">{text}</p>
+          <p className="text-[var(--muted)]">{text}</p>
         </div>
       </div>
     </div>

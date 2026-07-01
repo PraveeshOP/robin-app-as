@@ -9,7 +9,7 @@ export default function ContactH1() {
           <h1 className="text-3xl sm:text-4xl lg:text-5xl">
             Let&apos;s build something great together
           </h1>
-          <p className="mt-4 text-gray-400">
+          <p className="mt-4 text-[var(--muted)]">
             Have a project in mind or want to lean more about our servies?
             We&apos;d love to hear from ypu. Reach out to us and let&apos;s
             start a conversation about how we can help bring your ideas to life.

@@ -44,7 +44,7 @@ export default function ButtomNavBar() {
             />
           </div>
           <div className="mt-4">
-            <p className="text-gray-400">
+            <p className="text-[var(--muted)]">
               Building Innovative IT Solutions <br /> that drive business
               growth.
             </p>
@@ -66,7 +66,7 @@ export default function ButtomNavBar() {
             <div className="items-center mb-4">
               <h1 className="text-lg font-bold">Quick Links</h1>
             </div>
-            <ul className="flex flex-col gap-2 text-gray-400">
+            <ul className="flex flex-col gap-2 text-[var(--muted)]">
               <li>
                 <Link href="/">Home</Link>
               </li>
@@ -87,7 +87,7 @@ export default function ButtomNavBar() {
             <div className="items-center mb-4">
               <h1 className="text-lg font-bold">Services</h1>
             </div>
-            <ul className="flex flex-col gap-2 text-gray-400">
+            <ul className="flex flex-col gap-2 text-[var(--muted)]">
               <li>
                 <Link href="/">Web Development</Link>
               </li>
@@ -108,7 +108,7 @@ export default function ButtomNavBar() {
             <div className="items-center mb-4">
               <h1 className="text-lg font-bold">Contact Us</h1>
             </div>
-            <p className="text-gray-400">
+            <p className="text-[var(--muted)]">
               contact@robinapp.no <br />
               +47 486 72 406 <br />
               Stovner senter 26 <br />
@@ -121,7 +121,7 @@ export default function ButtomNavBar() {
             <div className="items-center mb-4">
               <h1 className="text-lg font-bold">Newsletter</h1>
             </div>
-            <p className="text-gray-400 mb-4">
+            <p className="mb-4 text-[var(--muted)]">
               Subscribe to our newsletter for the latest updates and insights.
             </p>
             <div className="flex flex-col gap-3 xl:flex-row">
@@ -130,7 +130,7 @@ export default function ButtomNavBar() {
                 placeholder="Enter your email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="min-w-0 w-full px-4 py-2 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-[#42a9b8]"
+                className="min-w-0 w-full rounded-lg border border-[color:var(--border)] bg-[var(--background)] px-4 py-2 text-[var(--foreground)] placeholder:text-[var(--muted)] focus:outline-none focus:ring-2 focus:ring-[#42a9b8]"
               />
               <button
                 onClick={handleSubscribe}

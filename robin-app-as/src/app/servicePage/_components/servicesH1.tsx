@@ -5,7 +5,7 @@ export default function ServicesH1() {
         <div className="flex flex-1 flex-col gap-4 lg:mt-10">
           <div className="mt-4 text-[#42a9b8]">Services</div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl">Powerful IT solutions that drive your business forward.</h1>
-          <p className="mt-4 text-gray-400">
+          <p className="mt-4 text-[var(--muted)]">
             We deliver end-to-end digital solutions to help businesses innovate,
             scale, and stay ahead in the competitive landscape. From custom
             software development to IT consulting, we have the expertise to turn

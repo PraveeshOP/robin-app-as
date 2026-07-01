@@ -19,7 +19,7 @@ export default function ContactUsInnerCard({
           <h1 className="text-xl font-bold">{title}</h1>
         </div>
         <div>
-          <p className="text-gray-400">{text}</p>
+          <p className="text-[var(--muted)]">{text}</p>
         </div>
       </div>
     </div>

@@ -5,7 +5,7 @@ export default function AboutH1() {
         <div className="flex flex-1 flex-col gap-4 lg:mt-10">
           <div className="mt-4 text-[#42a9b8]">About Us</div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl">We build software that solves real problems.</h1>
-          <p className="mt-4 text-gray-400">
+          <p className="mt-4 text-[var(--muted)]">
             We are a team of passionate developers, designers, and strategists
             who love turning ideas into powerful digital solutions. We focus on
             quality, innovation, and long-term parterships to help businesses

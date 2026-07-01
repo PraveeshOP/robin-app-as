@@ -10,7 +10,7 @@ export default function GetInTouchInnerCard({
   text,
 }: GetInTouchInnerCardProps) {
   return (
-    <div className="flex flex-row gap-3 rounded-lg bg-gray-900 p-3">
+    <div className="flex flex-row gap-3 rounded-lg border border-[color:var(--border)] bg-[var(--surface)] p-3 shadow-sm">
       <div className="flex w-10 flex-shrink-0 items-center">
         <img src={icon} alt="Contact Us Icon" className="h-8 w-auto" />
       </div>
@@ -18,7 +18,7 @@ export default function GetInTouchInnerCard({
       <div className="min-w-0">
         <h1 className="text-lg font-bold">{title}</h1>
 
-        <p className="mt-1 break-words whitespace-pre-line text-sm text-gray-400">
+        <p className="mt-1 break-words whitespace-pre-line text-sm text-[var(--muted)]">
           {text}
         </p>
       </div>

@@ -3,10 +3,10 @@ import OurProcessInnerCard from "./ourProcessInnerCard";
 export default function DashboardH4() {
   return (
     <div className="flex w-full items-center justify-center px-4 sm:px-6">
-      <div className="flex w-full max-w-[1600px] flex-col justify-between gap-8 rounded-lg bg-gray-900 p-6 sm:p-8 lg:flex-row lg:gap-10">
+      <div className="flex w-full max-w-[1600px] flex-col justify-between gap-8 rounded-lg border border-[color:var(--border)] bg-[var(--surface)] p-6 shadow-sm sm:p-8 lg:flex-row lg:gap-10">
         <div className="flex-1 flex flex-col gap-4">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl">Our Process</h2>
-          <p className="mt-4 text-gray-400">
+          <p className="mt-4 text-[var(--muted)]">
             A simple and effective process that ensures successful
             project delivery. We work closely with our clients to understand
             their needs and goals, and we use our expertise to deliver

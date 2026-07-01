@@ -31,7 +31,7 @@ export default function NavBar() {
                 className={`pb-1 transition-colors ${
                   pathname === item.href
                     ? "text-[#42a9b8] border-b-2 border-[#42a9b8]"
-                    : "text-white hover:text-[#42a9b8]"
+                    : "text-[var(--foreground)] hover:text-[#42a9b8]"
                 }`}
               >
                 {item.name}
@@ -58,11 +58,11 @@ export default function NavBar() {
         </button>
       </div>
       {isOpen && (
-        <nav id="mobile-menu" className="absolute left-4 right-4 top-20 rounded-xl border border-gray-700 bg-[#0a0a0a] p-5 shadow-xl lg:hidden">
+        <nav id="mobile-menu" className="absolute left-4 right-4 top-20 rounded-xl border border-[color:var(--border)] bg-[var(--surface)] p-5 shadow-xl lg:hidden">
           <ul className="flex flex-col gap-1 text-lg font-bold">
             {navItems.map((item) => (
               <li key={item.href}>
-                <Link href={item.href} onClick={() => setIsOpen(false)} className={`block rounded-lg px-4 py-3 ${pathname === item.href ? "bg-gray-900 text-[#42a9b8]" : "text-white hover:bg-gray-900"}`}>
+                <Link href={item.href} onClick={() => setIsOpen(false)} className={`block rounded-lg px-4 py-3 ${pathname === item.href ? "bg-[color:var(--surface-elevated)] text-[#42a9b8]" : "text-[var(--foreground)] hover:bg-[color:var(--surface-elevated)]"}`}>
                   {item.name}
                 </Link>
               </li>

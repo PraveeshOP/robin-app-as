@@ -3,12 +3,12 @@ import ServiceCard from "@/components/serviceCard";
 export default function DashboardH2() {
   return (
     <div className="flex w-full items-center justify-center px-4 sm:px-6">
-      <div className="w-full max-w-[1600px] rounded-lg bg-gray-900 p-6 sm:p-8">
+      <div className="w-full max-w-[1600px] rounded-lg border border-[color:var(--border)] bg-[var(--surface)] p-6 shadow-sm sm:p-8">
         <div className="flex flex-col justify-between gap-3 sm:flex-row sm:items-end">
           <div className="flex flex-col gap-4">
             <h2 className="text-3xl font-bold sm:text-4xl lg:text-5xl">Our Services</h2>
           </div>
-          <div className="max-w-xl text-gray-400">
+          <div className="max-w-xl text-[var(--muted)]">
             <p>
               We offer a wide range of IT solutions to help businesses
               innovate, scale and stay ahead.
